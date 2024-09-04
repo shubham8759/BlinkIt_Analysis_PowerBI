@@ -1,0 +1,19 @@
+Average Sales = AVERAGE('BlinkIT Grocery Data xlsx - BlinkIT Grocery Data'[Sales])
+
+
+Avg Rating = AVERAGE('BlinkIT Grocery Data xlsx - BlinkIT Grocery Data'[Rating] )
+
+
+Total Item = COUNT('BlinkIT Grocery Data xlsx - BlinkIT Grocery Data'[Item Type])
+
+
+Total Sales = SUM('BlinkIT Grocery Data xlsx - BlinkIT Grocery Data'[Sales])
+
+
+
+Metrics = {
+    ("Total Sales", NAMEOF('BlinkIT Grocery Data xlsx - BlinkIT Grocery Data'[Total Sales]), 0),
+    ("Average Sales", NAMEOF('BlinkIT Grocery Data xlsx - BlinkIT Grocery Data'[Average Sales]), 1),
+    ("Total Item", NAMEOF('BlinkIT Grocery Data xlsx - BlinkIT Grocery Data'[Total Item]), 2),
+    ("Avg Rating", NAMEOF('BlinkIT Grocery Data xlsx - BlinkIT Grocery Data'[Avg Rating]), 3)
+}
